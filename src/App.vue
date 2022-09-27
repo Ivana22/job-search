@@ -1,15 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="I'm learning Vue! " />
+  <MainNav></MainNav>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import MainNav from "@/components/MainNav.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    MainNav,
   },
 };
 </script>

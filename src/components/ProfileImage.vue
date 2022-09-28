@@ -1,0 +1,15 @@
+<template>
+  <img :src="imageLink" class="w-8 h-8 object-contain rounded-3xl" />
+</template>
+
+<script>
+export default {
+  name: "ProfileImage",
+  data() {
+    return {
+      imageLink:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4wrYvRginbNzHtmRRdZ64N0qNP7J0tdtQ8QncZ2U&s",
+    };
+  },
+};
+</script>

@@ -24,7 +24,13 @@
         </nav>
         <div class="flex items-center h-full ml-auto">
           <ProfileImage v-if="isLoggedIn" data-test="profile-image" />
-          <ActionButton v-else data-test="action-button" @click="loginUser" />
+          <ActionButton
+            v-else
+            data-test="action-button"
+            text="Sign in"
+            type="primary"
+            @click="loginUser"
+          />
         </div>
       </div>
     </div>

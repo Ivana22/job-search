@@ -1,31 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664451387484" clover="3.2.0">
-  <project timestamp="1664451387484" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="19" coveredelements="19" complexity="0" loc="13" ncloc="13" packages="1" files="4" classes="4"/>
-    <file name="ActionButton.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/ActionButton.vue">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="8" count="2" type="stmt"/>
-      <line num="20" count="7" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-    </file>
-    <file name="MainNav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/MainNav.vue">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="42" count="1" type="stmt"/>
-      <line num="43" count="1" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="53" count="5" type="stmt"/>
-      <line num="69" count="2" type="stmt"/>
-    </file>
-    <file name="ProfileImage.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/ProfileImage.vue">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-    </file>
-    <file name="Subnav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Subnav.vue">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="13" count="2" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
-    </file>
+<coverage generated="1664527821440" clover="3.2.0">
+  <project timestamp="1664527821440" name="All files">
+    <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14" elements="42" coveredelements="42" complexity="0" loc="28" ncloc="28" packages="2" files="6" classes="6"/>
+    <package name="components">
+      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="13"/>
+      <file name="ActionButton.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/ActionButton.vue">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+      </file>
+      <file name="Headline.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Headline.vue">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+      </file>
+      <file name="MainNav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/MainNav.vue">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="69" count="7" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+      </file>
+      <file name="ProfileImage.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/ProfileImage.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+      <file name="Subnav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Subnav.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="nextElementsInList.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/utils/nextElementsInList.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

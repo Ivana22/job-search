@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664559670941" clover="3.2.0">
-  <project timestamp="1664559670941" name="All files">
-    <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14" elements="42" coveredelements="42" complexity="0" loc="28" ncloc="28" packages="4" files="6" classes="6"/>
+<coverage generated="1664603042412" clover="3.2.0">
+  <project timestamp="1664603042412" name="All files">
+    <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="15" elements="45" coveredelements="45" complexity="0" loc="30" ncloc="30" packages="4" files="7" classes="7"/>
     <package name="components.JobSearch">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <file name="Headline.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/JobSearch/Headline.vue">
@@ -41,12 +41,17 @@
       </file>
     </package>
     <package name="components.Shared">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="ActionButton.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Shared/ActionButton.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="8" count="2" type="stmt"/>
         <line num="20" count="7" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
+      </file>
+      <file name="TextInput.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Shared/TextInput.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
       </file>
     </package>
     <package name="utils">

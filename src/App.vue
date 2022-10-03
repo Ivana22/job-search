@@ -1,27 +1,17 @@
 <template>
-  <MainNav></MainNav>
-  <Hero />
+  <div>
+    <MainNav />
+    <router-link></router-link>
+  </div>
+  <router-view />
 </template>
 
 <script>
 import MainNav from "@/components/Navigation/MainNav.vue";
-import Hero from "@/components/JobSearch/Hero.vue";
 export default {
   name: "App",
   components: {
     MainNav,
-    Hero,
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

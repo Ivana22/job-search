@@ -1,11 +1,14 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="flex flex-row flex-nowrap w-full">
+    <JobFiltersSidebar />
+    <JobListings />
   </div>
 </template>
 <script>
+import JobFiltersSidebar from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebar.vue";
+import JobListings from "@/components/JobResults/JobListings";
 export default {
   name: "JobResultsView",
-  computed: {},
+  components: { JobFiltersSidebar, JobListings },
 };
 </script>

@@ -1,23 +1,32 @@
-import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@/views/Home.vue";
-import JobResultsView from "@/views/JobResults.vue";
+import { createRouter, createWebHashHistory } from "vue-router";
+
+const HomeView = () => import("@/views/Home.vue");
+const JobResultsView = () =>
+  import(/* webpackChunkName: "jobs" */ "@/views/JobResults.vue");
+const JobView = () =>
+  import(/* webpackChunkName: "jobs" */ "@/views/JobView.vue");
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: "HomeView",
+    component: HomeView,
   },
   {
     path: "/jobs/results",
     name: "JobResults",
-    component: "JobResultsView",
+    component: JobResultsView,
+  },
+  {
+    path: "/jobs/results/:id",
+    name: "JobListing",
+    component: JobView,
   },
 ];
 
-createRouter({
-  history: createWebHistory(),
-  routes: routes,
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
 });
 
 export default router;

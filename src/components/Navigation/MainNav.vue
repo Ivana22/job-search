@@ -4,7 +4,9 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <router-link to="/" class="flex items-center h-full text-xl"
+        <router-link
+          :to="{ name: 'Home' }"
+          class="flex items-center h-full text-xl"
           >Bobo Careers</router-link
         >
 
@@ -12,28 +14,31 @@
           <ul class="flex h-full p-0 m-0 list-none">
             <li
               v-for="menuItem in menuItems"
-              :key="menuItem"
+              :key="menuItem.text"
               class="h-full ml-9 first:ml-0"
               data-test="main-nav-list-item"
             >
-              <a href="/" class="flex items-center h-full py-2.5">{{
-                menuItem
-              }}</a>
+              <router-link
+                :to="menuItem.url"
+                class="flex items-center h-full py-2.5"
+                >{{ menuItem.text }}</router-link
+              >
             </li>
           </ul>
         </nav>
+
         <div class="flex items-center h-full ml-auto">
-          <ProfileImage v-if="isLoggedIn" data-test="profile-image" />
-          <ActionButton
+          <profile-image v-if="isLoggedIn" data-test="profile-image" />
+          <action-button
             v-else
-            data-test="action-button"
             text="Sign in"
-            type="primary"
+            data-test="action-button"
             @click="loginUser"
           />
         </div>
       </div>
-      <Subnav v-if="isLoggedIn" data-test="subnav" />
+
+      <subnav v-if="isLoggedIn" data-test="subnav" />
     </div>
   </header>
 </template>
@@ -42,6 +47,7 @@
 import ActionButton from "@/components/Shared/ActionButton.vue";
 import ProfileImage from "@/components/Navigation/ProfileImage.vue";
 import Subnav from "@/components/Navigation/Subnav.vue";
+
 export default {
   name: "MainNav",
   components: {
@@ -52,12 +58,12 @@ export default {
   data() {
     return {
       menuItems: [
-        "Teams",
-        "Locations",
-        "Life at Bobo",
-        "How we hire",
-        "Students",
-        "Jobs",
+        { text: "Teams", url: "/" },
+        { text: "Locations", url: "/" },
+        { text: "Life at Bobo", url: "/" },
+        { text: "How we hire", url: "/" },
+        { text: "Students", url: "/" },
+        { text: "Jobs", url: "/jobs/results" },
       ],
       isLoggedIn: false,
     };

@@ -17,12 +17,14 @@
             v-if="previousPage"
             :to="{ name: 'JobResults', query: { page: previousPage } }"
             class="mx-3 text-sm font-semi text-brand-blue-1"
+            data-test="previous-page-link"
             >Previous</router-link
           >
           <router-link
             v-if="nextPage"
             :to="{ name: 'JobResults', query: { page: nextPage } }"
             class="mx-3 text-sm font-semi text-brand-blue-1"
+            data-test="next-page-link"
             >Next</router-link
           >
         </div>
@@ -54,7 +56,7 @@ export default {
     },
     nextPage() {
       const nextPage = this.currentPage + 1;
-      const maxPage = this.jobs.length / 10;
+      const maxPage = Math.ceil(this.jobs.length / 10);
       return nextPage <= maxPage ? nextPage : undefined;
     },
     displayedJobs() {

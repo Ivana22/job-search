@@ -28,12 +28,6 @@ describe("JobListing", () => {
     expect(wrapper.text()).toMatch("Vue Programmer");
   });
 
-  //   it("renders job organization", () => {
-  //     const jobProps = createJobProps({ organization: "AirBnB" });
-  //     const wrapper = mount(JobListing, createConfig(jobProps));
-  //     expect(wrapper.text()).toMatch("AirBnB");
-  //   });
-
   it("renders job locations", () => {
     const jobProps = createJobProps({ locations: ["Orlando", "Jacksonville"] });
     const wrapper = mount(JobListing, createConfig(jobProps));

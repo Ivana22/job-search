@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1667031234503" clover="3.2.0">
-  <project timestamp="1667031234503" name="All files">
-    <metrics statements="75" coveredstatements="75" conditionals="8" coveredconditionals="6" methods="30" coveredmethods="30" elements="113" coveredelements="111" complexity="0" loc="75" ncloc="75" packages="7" files="14" classes="14"/>
+<coverage generated="1667072405812" clover="3.2.0">
+  <project timestamp="1667072405812" name="All files">
+    <metrics statements="82" coveredstatements="82" conditionals="8" coveredconditionals="6" methods="32" coveredmethods="32" elements="122" coveredelements="120" complexity="0" loc="82" ncloc="82" packages="7" files="15" classes="15"/>
     <package name="api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/api/getJobs.js">
@@ -41,7 +41,7 @@
       </file>
     </package>
     <package name="components.JobSearch">
-      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
       <file name="Headline.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/JobSearch/Headline.vue">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="16" count="1" type="stmt"/>
@@ -61,6 +61,16 @@
         <line num="46" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
         <line num="60" count="1" type="stmt"/>
+      </file>
+      <file name="Spotlight.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/JobSearch/Spotlight.vue">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
       </file>
     </package>
     <package name="components.Navigation">

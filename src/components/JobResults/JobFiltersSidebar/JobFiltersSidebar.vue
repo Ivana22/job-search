@@ -10,7 +10,22 @@
         </div>
       </div>
     </section>
-    <accordion> this is child </accordion>
+    <accordion header="Degree" />
+    <accordion header="Job types">
+      <p>Placeholder for now</p>
+    </accordion>
+    <accordion header="Organizations">
+      <div class="mt-5">
+        <fieldset>
+          <ul class="flex flex-row flex-wrap">
+            <li class="w-1/2 h-8">
+              <input id="VueTube" type="checkbox" class="mr-3" />
+              <label for="VueTube">VueTube</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </accordion>
   </div>
 </template>
 <script>

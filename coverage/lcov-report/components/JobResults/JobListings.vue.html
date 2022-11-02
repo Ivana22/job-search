@@ -29,9 +29,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.67% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -171,43 +171,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -217,7 +217,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
   &lt;main class="flex-auto p-8 bg-brand-gray-2"&gt;
     &lt;ol&gt;
-      &lt;JobListing
+      &lt;job-listing
         v-for="job in displayedJobs"
         :key="job.id"
         :job="job"
@@ -227,19 +227,21 @@
 &nbsp;
     &lt;div class="mt-8 mx-auto"&gt;
       &lt;div class="flex flex-row flex-nowrap"&gt;
-        &lt;p class="text-sm flex-grow"&gt;Page: {{ currentPage }}&lt;/p&gt;
-        &lt;div class="flex items-center justify-start"&gt;
+        &lt;p class="text-sm flex-grow"&gt;Page {{ currentPage }}&lt;/p&gt;
+&nbsp;
+        &lt;div class="flex items-center justify-center"&gt;
           &lt;router-link
             v-if="previousPage"
             :to="{ name: 'JobResults', query: { page: previousPage } }"
-            class="mx-3 text-sm font-semi text-brand-blue-1"
+            class="mx-3 text-sm font-semibold text-brand-blue-1"
             data-test="previous-page-link"
             &gt;Previous&lt;/router-link
           &gt;
+&nbsp;
           &lt;router-link
             v-if="nextPage"
             :to="{ name: 'JobResults', query: { page: nextPage } }"
-            class="mx-3 text-sm font-semi text-brand-blue-1"
+            class="mx-3 text-sm font-semibold text-brand-blue-1"
             data-test="next-page-link"
             &gt;Next&lt;/router-link
           &gt;
@@ -252,13 +254,16 @@
 &lt;script&gt;
 import { mapActions, mapGetters } from "vuex";
 &nbsp;
-import { FETCH_JOBS, FILTERED_JOBS_BY_ORGANIZATIONS } from "@/store";
-import JobListing from "@/components/JobResults/JobListing";
+import { FETCH_JOBS, FILTERED_JOBS } from "@/store/constants";
+import JobListing from "@/components/JobResults/JobListing.vue";
+&nbsp;
 export default {
   name: "JobListings",
-  components: { JobListing },
+  components: {
+    JobListing,
+  },
   computed: {
-    ...mapGetters([FILTERED_JOBS_BY_ORGANIZATIONS]),
+    ...mapGetters([FILTERED_JOBS]),
     currentPage() {
       const pageString = this.$route.query.page || "1";
       return Number.parseInt(pageString);
@@ -266,23 +271,18 @@ export default {
     previousPage() {
       const previousPage = this.currentPage - 1;
       const firstPage = 1;
-      return previousPage &gt;= firstPage ? <span class="branch-0 cbranch-no" title="branch not covered" >previousPage : u</span>ndefined;
+      return previousPage &gt;= firstPage ? firstPage : undefined;
     },
     nextPage() {
       const nextPage = this.currentPage + 1;
-      const maxPage = Math.ceil(
-        this.FILTERED_JOBS_BY_ORGANIZATIONS.length / 10
-      );
-      return nextPage &lt;= maxPage ? <span class="branch-0 cbranch-no" title="branch not covered" >nextPage : u</span>ndefined;
+      const maxPage = Math.ceil(this.FILTERED_JOBS.length / 10);
+      return nextPage &lt;= maxPage ? nextPage : undefined;
     },
     displayedJobs() {
       const pageNumber = this.currentPage;
       const firstJobIndex = (pageNumber - 1) * 10;
       const lastJobIndex = pageNumber * 10;
-      return this.FILTERED_JOBS_BY_ORGANIZATIONS.slice(
-        firstJobIndex,
-        lastJobIndex
-      );
+      return this.FILTERED_JOBS.slice(firstJobIndex, lastJobIndex);
     },
   },
   async mounted() {
@@ -300,7 +300,7 @@ export default {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Oct 31 2022 09:25:28 GMT+0100 (Central European Standard Time)
+                at Wed Nov 02 2022 10:53:15 GMT+0100 (Central European Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

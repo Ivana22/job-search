@@ -15,14 +15,21 @@
       <p>Placeholder for now</p>
     </accordion>
     <JobFiltersSidebarOrganizations />
+    <JobFiltersSidebarJobTypesVue />
   </div>
 </template>
 <script>
 import ActionButton from "@/components/Shared/ActionButton.vue";
 import Accordion from "@/components/Shared/Accordion.vue";
 import JobFiltersSidebarOrganizations from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebarOrganizations.vue";
+import JobFiltersSidebarJobTypesVue from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebarJobTypes.vue";
 export default {
   name: "JobFiltersSidebar",
-  components: { ActionButton, Accordion, JobFiltersSidebarOrganizations },
+  components: {
+    ActionButton,
+    Accordion,
+    JobFiltersSidebarOrganizations,
+    JobFiltersSidebarJobTypesVue,
+  },
 };
 </script>

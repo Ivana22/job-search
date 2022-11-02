@@ -1,7 +1,7 @@
 <template>
   <main class="flex-auto p-8 bg-brand-gray-2">
     <ol>
-      <JobListing
+      <job-listing
         v-for="job in displayedJobs"
         :key="job.id"
         :job="job"
@@ -11,19 +11,21 @@
 
     <div class="mt-8 mx-auto">
       <div class="flex flex-row flex-nowrap">
-        <p class="text-sm flex-grow">Page: {{ currentPage }}</p>
-        <div class="flex items-center justify-start">
+        <p class="text-sm flex-grow">Page {{ currentPage }}</p>
+
+        <div class="flex items-center justify-center">
           <router-link
             v-if="previousPage"
             :to="{ name: 'JobResults', query: { page: previousPage } }"
-            class="mx-3 text-sm font-semi text-brand-blue-1"
+            class="mx-3 text-sm font-semibold text-brand-blue-1"
             data-test="previous-page-link"
             >Previous</router-link
           >
+
           <router-link
             v-if="nextPage"
             :to="{ name: 'JobResults', query: { page: nextPage } }"
-            class="mx-3 text-sm font-semi text-brand-blue-1"
+            class="mx-3 text-sm font-semibold text-brand-blue-1"
             data-test="next-page-link"
             >Next</router-link
           >
@@ -36,13 +38,16 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 
-import { FETCH_JOBS, FILTERED_JOBS_BY_ORGANIZATIONS } from "@/store/constants";
-import JobListing from "@/components/JobResults/JobListing";
+import { FETCH_JOBS, FILTERED_JOBS } from "@/store/constants";
+import JobListing from "@/components/JobResults/JobListing.vue";
+
 export default {
   name: "JobListings",
-  components: { JobListing },
+  components: {
+    JobListing,
+  },
   computed: {
-    ...mapGetters([FILTERED_JOBS_BY_ORGANIZATIONS]),
+    ...mapGetters([FILTERED_JOBS]),
     currentPage() {
       const pageString = this.$route.query.page || "1";
       return Number.parseInt(pageString);
@@ -50,23 +55,18 @@ export default {
     previousPage() {
       const previousPage = this.currentPage - 1;
       const firstPage = 1;
-      return previousPage >= firstPage ? previousPage : undefined;
+      return previousPage >= firstPage ? firstPage : undefined;
     },
     nextPage() {
       const nextPage = this.currentPage + 1;
-      const maxPage = Math.ceil(
-        this.FILTERED_JOBS_BY_ORGANIZATIONS.length / 10
-      );
+      const maxPage = Math.ceil(this.FILTERED_JOBS.length / 10);
       return nextPage <= maxPage ? nextPage : undefined;
     },
     displayedJobs() {
       const pageNumber = this.currentPage;
       const firstJobIndex = (pageNumber - 1) * 10;
       const lastJobIndex = pageNumber * 10;
-      return this.FILTERED_JOBS_BY_ORGANIZATIONS.slice(
-        firstJobIndex,
-        lastJobIndex
-      );
+      return this.FILTERED_JOBS.slice(firstJobIndex, lastJobIndex);
     },
   },
   async mounted() {

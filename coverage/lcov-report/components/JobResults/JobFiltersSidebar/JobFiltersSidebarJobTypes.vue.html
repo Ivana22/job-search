@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/JobResults/JobFiltersSidebar/JobFiltersSidebarOrganizations.vue</title>
+    <title>Code coverage report for components/JobResults/JobFiltersSidebar/JobFiltersSidebarJobTypes.vue</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -18,7 +18,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/JobResults/JobFiltersSidebar</a> JobFiltersSidebarOrganizations.vue</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/JobResults/JobFiltersSidebar</a> JobFiltersSidebarJobTypes.vue</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -107,20 +107,7 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -150,15 +137,8 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -179,61 +159,51 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;accordion header="Organizations"&gt;
+  &lt;accordion header="Job Types"&gt;
     &lt;div class="mt-5"&gt;
       &lt;fieldset&gt;
         &lt;ul class="flex flex-row flex-wrap"&gt;
           &lt;li
-            v-for="organization in UNIQUE_ORGANIZATIONS"
-            :key="organization"
+            v-for="jobType in UNIQUE_JOB_TYPES"
+            :key="jobType"
             class="w-1/2 h-8"
           &gt;
             &lt;input
-              :id="organization"
-              v-model="selectedOrganizations"
-              :value="organization"
+              :id="jobType"
+              v-model="selectedJobTypes"
+              :value="jobType"
               type="checkbox"
               class="mr-3"
-              :data-test="organization"
-              @change="selectOrganization"
+              :data-test="jobType"
+              @change="selectJobType"
             /&gt;
-            &lt;label :for="organization" data-test="organization"&gt;{{
-              organization
-            }}&lt;/label&gt;
+            &lt;label :for="jobType" data-test="jobType"&gt;{{ jobType }}&lt;/label&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/fieldset&gt;
     &lt;/div&gt;
   &lt;/accordion&gt;
 &lt;/template&gt;
-&nbsp;
 &lt;script&gt;
 import { mapGetters, mapMutations } from "vuex";
 &nbsp;
-import {
-  UNIQUE_ORGANIZATIONS,
-  ADD_SELECTED_ORGANIZATIONS,
-} from "@/store/constants";
-&nbsp;
+import { ADD_SELECTED_JOB_TYPES, UNIQUE_JOB_TYPES } from "@/store/constants";
 import Accordion from "@/components/Shared/Accordion.vue";
-&nbsp;
 export default {
-  name: "JobFiltersSidebarOrganizations",
-  components: {
-    Accordion,
-  },
+  name: "JobFiltersSidebarJobTypes",
+  components: { Accordion },
   data() {
     return {
-      selectedOrganizations: [],
+      selectedJobTypes: [],
     };
   },
   computed: {
-    ...mapGetters([UNIQUE_ORGANIZATIONS]),
+    ...mapGetters([UNIQUE_JOB_TYPES]),
   },
   methods: {
-    ...mapMutations([ADD_SELECTED_ORGANIZATIONS]),
-    selectOrganization() {
-      this.ADD_SELECTED_ORGANIZATIONS(this.selectedOrganizations);
+    ...mapMutations([ADD_SELECTED_JOB_TYPES]),
+    selectJobType() {
+      this.ADD_SELECTED_JOB_TYPES(this.selectedJobTypes);
       this.$router.push({ name: "JobResults" });
     },
   },

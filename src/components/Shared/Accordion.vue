@@ -16,6 +16,7 @@
   </div>
 </template>
 <script>
+import { computed, ref } from "vue";
 export default {
   name: "Accordion",
   props: {
@@ -24,20 +25,35 @@ export default {
       required: true,
     },
   },
-  data() {
+  setup() {
+    const isOpen = ref(false);
+    const open = () => {
+      isOpen.value = !isOpen.value;
+    };
+    const caretIcon = computed(() =>
+      isOpen.value ? ["fas", "angle-up"] : ["fas", "angle-down"]
+    );
     return {
-      isOpen: false,
+      open,
+      isOpen,
+      caretIcon,
     };
   },
-  computed: {
-    caretIcon() {
-      return this.isOpen ? ["fas", "angle-up"] : ["fas", "angle-down"];
-    },
-  },
-  methods: {
-    open() {
-      this.isOpen = !this.isOpen;
-    },
-  },
+
+  // data() {
+  //   return {
+  //     isOpen: false,
+  //   };
+  // },
+  // computed: {
+  //   caretIcon() {
+  //     return this.isOpen ? ["fas", "angle-up"] : ["fas", "angle-down"];
+  //   },
+  // },
+  // methods: {
+  //   open() {
+  //     this.isOpen = !this.isOpen;
+  //   },
+  // },
 };
 </script>

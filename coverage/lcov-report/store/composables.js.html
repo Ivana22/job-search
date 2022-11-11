@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for store/mutations.js</title>
+    <title>Code coverage report for store/composables.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -18,13 +18,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">store</a> mutations.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">store</a> composables.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -38,14 +38,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -86,45 +86,45 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
-  LOGIN_USER,
-  RECEIVE_JOBS,
-  ADD_SELECTED_ORGANIZATIONS,
-  ADD_SELECTED_JOB_TYPES,
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { computed } from "vue";
+import { useStore } from "vuex";
+&nbsp;
+import {
+  FILTERED_JOBS,
+  UNIQUE_JOB_TYPES,
+  UNIQUE_ORGANIZATIONS,
 } from "@/store/constants";
 &nbsp;
-const mutations = {
-  [LOGIN_USER](state) {
-    state.isLoggedIn = true;
-  },
-  [RECEIVE_JOBS](state, jobs) {
-    state.jobs = jobs;
-  },
-  [ADD_SELECTED_ORGANIZATIONS](state, organizations) {
-    state.selectedOrganizations = organizations;
-  },
-  [ADD_SELECTED_JOB_TYPES](state, jobTypes) {
-    state.selectedJobTypes = jobTypes;
-  },
+export const useFilteredJobs = () =&gt; {
+  const store = useStore();
+  return computed(() =&gt; store.getters[FILTERED_JOBS]);
 };
 &nbsp;
-export default mutations;
+export const useUniqueJobTypes = () =&gt; {
+  const store = useStore();
+  return computed(() =&gt; store.getters[UNIQUE_JOB_TYPES]);
+};
+&nbsp;
+export const useUniqueOrganizations = () =&gt; {
+  const store = useStore();
+  return computed(() =&gt; store.getters[UNIQUE_ORGANIZATIONS]);
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

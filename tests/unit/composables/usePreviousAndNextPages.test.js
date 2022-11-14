@@ -1,5 +1,4 @@
-import usePreviousAndNextPages from "@/composables/usePreviousAndNextPages";
-
+import usePreviousAndNextPages from "../../../src/composables/usePreviousAndNextPages";
 describe("usePreviousAndNextPages", () => {
   it("calculates page before current one", () => {
     const currentPage = { value: 8 };

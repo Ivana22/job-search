@@ -33,7 +33,7 @@ describe("JobListings", () => {
 
   it("creates a job listing for a maximum of 10 jobs", async () => {
     useFilteredJobs.mockReturnValue({ value: Array(15).fill({}) });
-    useCurrentPage.mockReturnValue(ref(5));
+    useCurrentPage.mockReturnValue(ref(1));
     usePreviousAndNextPages.mockReturnValue({
       previousPage: undefined,
       nextPage: 2,
@@ -47,7 +47,7 @@ describe("JobListings", () => {
 
   it("displays page number", () => {
     useFilteredJobs.mockReturnValue({ value: [] });
-    useCurrentPage.mockReturnValue({ value: 5 });
+    useCurrentPage.mockReturnValue(ref(5));
     usePreviousAndNextPages.mockReturnValue({ previousPage: 4, nextPage: 6 });
     const wrapper = shallowMount(JobListings, createConfig());
     expect(wrapper.text()).toMatch("Page 5");
@@ -67,7 +67,7 @@ describe("JobListings", () => {
     });
 
     it("shows link to next page", async () => {
-      useFilteredJobs.mockReturnValue([]);
+      useFilteredJobs.mockReturnValue({ value: [] });
       useCurrentPage.mockReturnValue(ref(1));
       usePreviousAndNextPages.mockReturnValue({
         previousPage: undefined,
@@ -83,7 +83,7 @@ describe("JobListings", () => {
 
   describe("when user is on last page of job results", () => {
     it("does not show link to next page", async () => {
-      useFilteredJobs.mockReturnValue([]);
+      useFilteredJobs.mockReturnValue({ value: [] });
       useCurrentPage.mockReturnValue(ref(2));
       usePreviousAndNextPages.mockReturnValue({
         previousPage: 1,
@@ -97,11 +97,11 @@ describe("JobListings", () => {
     });
 
     it("shows link to previous page", async () => {
-      useFilteredJobs.mockReturnValue([]);
-      useCurrentPage.mockReturnValue(ref(1));
+      useFilteredJobs.mockReturnValue({ value: [] });
+      useCurrentPage.mockReturnValue(ref(2));
       usePreviousAndNextPages.mockReturnValue({
-        previousPage: undefined,
-        nextPage: 2,
+        previousPage: 1,
+        nextPage: undefined,
       });
 
       const wrapper = shallowMount(JobListings, createConfig());

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668425117840" clover="3.2.0">
-  <project timestamp="1668425117840" name="All files">
-    <metrics statements="169" coveredstatements="169" conditionals="12" coveredconditionals="12" methods="61" coveredmethods="60" elements="242" coveredelements="241" complexity="0" loc="169" ncloc="169" packages="9" files="24" classes="24"/>
-    <package name="api">
+<coverage generated="1668611814896" clover="3.2.0">
+  <project timestamp="1668611814897" name="All files">
+    <metrics statements="185" coveredstatements="185" conditionals="14" coveredconditionals="13" methods="63" coveredmethods="62" elements="262" coveredelements="260" complexity="0" loc="185" ncloc="185" packages="10" files="25" classes="25"/>
+    <package name="src.api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/api/getJobs.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -12,7 +12,7 @@
         <line num="6" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="components.JobResults">
+    <package name="src.components.JobResults">
       <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
       <file name="JobListing.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/JobResults/JobListing.vue">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -42,7 +42,7 @@
         <line num="71" count="7" type="stmt"/>
       </file>
     </package>
-    <package name="components.JobResults.JobFiltersSidebar">
+    <package name="src.components.JobResults.JobFiltersSidebar">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="JobFiltersSidebarCheckboxGroup.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/JobResults/JobFiltersSidebar/JobFiltersSidebarCheckboxGroup.vue">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -60,7 +60,7 @@
         <line num="58" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="components.JobSearch">
+    <package name="src.components.JobSearch">
       <metrics statements="31" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
       <file name="Headline.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/JobSearch/Headline.vue">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
@@ -103,7 +103,7 @@
         <line num="27" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="components.Navigation">
+    <package name="src.components.Navigation">
       <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="MainNav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Navigation/MainNav.vue">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -130,7 +130,7 @@
         <line num="28" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="components.Shared">
+    <package name="src.components.Shared">
       <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
       <file name="Accordion.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Shared/Accordion.vue">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
@@ -163,7 +163,7 @@
         <line num="28" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="composables">
+    <package name="src.composables">
       <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="useConfirmRoute.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/composables/useConfirmRoute.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -190,30 +190,36 @@
         <line num="15" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="store">
-      <metrics statements="48" coveredstatements="48" conditionals="4" coveredconditionals="4" methods="24" coveredmethods="24"/>
-      <file name="actions.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/actions.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+    <package name="src.store">
+      <metrics statements="59" coveredstatements="59" conditionals="4" coveredconditionals="4" methods="24" coveredmethods="24"/>
+      <file name="actions.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/actions.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="composables.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/composables.js">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
+      <file name="composables.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/composables.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
       </file>
-      <file name="constants.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/constants.js">
+      <file name="constants.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/constants.ts">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="7" type="stmt"/>
         <line num="5" count="7" type="stmt"/>
@@ -226,40 +232,45 @@
         <line num="16" count="7" type="stmt"/>
         <line num="17" count="7" type="stmt"/>
       </file>
-      <file name="getters.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/getters.js">
-        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+      <file name="getters.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/getters.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
+        <line num="1" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="28" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
       </file>
-      <file name="mutations.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/mutations.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+      <file name="mutations.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/mutations.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
       </file>
-      <file name="state.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/state.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="4" type="stmt"/>
+      <file name="state.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/store/state.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="15" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="utils">
+    <package name="src.utils">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="nextElementsInList.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/utils/nextElementsInList.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -268,6 +279,17 @@
         <line num="3" count="5" type="stmt"/>
         <line num="4" count="5" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="tests.unit.store">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="utils.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/tests/unit/store/utils.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="10" count="13" type="cond" truecount="1" falsecount="0"/>
       </file>
     </package>
   </project>

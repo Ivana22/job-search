@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668699524666" clover="3.2.0">
-  <project timestamp="1668699524666" name="All files">
-    <metrics statements="194" coveredstatements="194" conditionals="14" coveredconditionals="13" methods="63" coveredmethods="62" elements="271" coveredelements="269" complexity="0" loc="194" ncloc="194" packages="10" files="25" classes="25"/>
+<coverage generated="1668699912673" clover="3.2.0">
+  <project timestamp="1668699912673" name="All files">
+    <metrics statements="201" coveredstatements="201" conditionals="14" coveredconditionals="13" methods="63" coveredmethods="62" elements="278" coveredelements="276" complexity="0" loc="201" ncloc="201" packages="10" files="25" classes="25"/>
     <package name="src.api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/api/getJobs.js">
@@ -173,18 +173,25 @@
       </file>
     </package>
     <package name="src.composables">
-      <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
-      <file name="useConfirmRoute.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/composables/useConfirmRoute.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
+      <file name="useConfirmRoute.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/composables/useConfirmRoute.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
       </file>
-      <file name="useCurrentPage.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/composables/useCurrentPage.js">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="useCurrentPage.ts" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/composables/useCurrentPage.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
       </file>
       <file name="usePreviousAndNextPages.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/composables/usePreviousAndNextPages.js">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>

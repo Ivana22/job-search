@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668673686050" clover="3.2.0">
-  <project timestamp="1668673686050" name="All files">
-    <metrics statements="190" coveredstatements="190" conditionals="14" coveredconditionals="13" methods="63" coveredmethods="62" elements="267" coveredelements="265" complexity="0" loc="190" ncloc="190" packages="10" files="25" classes="25"/>
+<coverage generated="1668699524666" clover="3.2.0">
+  <project timestamp="1668699524666" name="All files">
+    <metrics statements="194" coveredstatements="194" conditionals="14" coveredconditionals="13" methods="63" coveredmethods="62" elements="271" coveredelements="269" complexity="0" loc="194" ncloc="194" packages="10" files="25" classes="25"/>
     <package name="src.api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/api/getJobs.js">
@@ -106,7 +106,7 @@
       </file>
     </package>
     <package name="src.components.Navigation">
-      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="MainNav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Navigation/MainNav.vue">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="47" count="1" type="stmt"/>
@@ -126,17 +126,18 @@
         <line num="11" count="1" type="stmt"/>
       </file>
       <file name="Subnav.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Navigation/Subnav.vue">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="18" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Shared">
-      <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
       <file name="Accordion.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Shared/Accordion.vue">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="19" count="2" type="stmt"/>
@@ -159,13 +160,16 @@
         <line num="32" count="3" type="stmt"/>
       </file>
       <file name="HeaderContainer.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Shared/HeaderContainer.vue">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
       </file>
       <file name="TextInput.vue" path="/Users/ivanatrpkova/IdeaProjects/job-search/src/components/Shared/TextInput.vue">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="12" count="2" type="stmt"/>
-        <line num="28" count="4" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.composables">

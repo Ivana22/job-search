@@ -7,8 +7,9 @@
         <router-link
           :to="{ name: 'Home' }"
           class="flex items-center h-full text-xl"
-          >Bobo Careers</router-link
         >
+          Bobo Careers
+        </router-link>
 
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
@@ -21,14 +22,18 @@
               <router-link
                 :to="menuItem.url"
                 class="flex items-center h-full py-2.5"
-                >{{ menuItem.text }}</router-link
               >
+                {{ menuItem.text }}
+              </router-link>
             </li>
           </ul>
         </nav>
 
         <div class="flex items-center h-full ml-auto">
-          <profile-image v-if="isLoggedIn" data-test="profile-image" />
+          <profile-image
+            v-if="isLoggedIn"
+            data-test="profile-image"
+          />
           <action-button
             v-else
             text="Sign in"
@@ -38,7 +43,10 @@
         </div>
       </div>
 
-      <subnav v-if="isLoggedIn" data-test="subnav" />
+      <subnav
+        v-if="isLoggedIn"
+        data-test="subnav"
+      />
     </div>
   </header>
 </template>

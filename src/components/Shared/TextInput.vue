@@ -5,7 +5,7 @@
     :placeholder="placeholder"
     class="w-full text-lg font-normal focus:outline-none"
     @input="handleInput"
-  />
+  >
 </template>
 
 <script lang="ts">

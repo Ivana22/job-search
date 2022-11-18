@@ -2,7 +2,7 @@ import { ref } from "vue";
 import { shallowMount, flushPromises, RouterLinkStub } from "@vue/test-utils";
 
 import { useFilteredJobs, useFetchJobsDispatch } from "@/store/composables";
-jest.mock("@/store/composables/");
+jest.mock("@/store/composables");
 
 import useCurrentPage from "@/composables/useCurrentPage";
 jest.mock("@/composables/useCurrentPage");

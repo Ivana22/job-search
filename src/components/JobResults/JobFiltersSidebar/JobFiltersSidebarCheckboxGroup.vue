@@ -16,8 +16,11 @@
               class="mr-3"
               :data-test="value"
               @change="selectValue"
-            />
-            <label :for="value + 'random key'" data-test="value">{{
+            >
+            <label
+              :for="value + 'random key'"
+              data-test="value"
+            >{{
               value
             }}</label>
           </li>

@@ -2,7 +2,7 @@
   <main class="flex flex-col h-screen">
     <section class="flex flex-col pt-10 pb-20">
       <div class="grid grid-cols-12">
-        <div class="col-start-1 col-span-1"></div>
+        <div class="col-start-1 col-span-1" />
         <div class="col-start-2 col-span-5">
           <Headline />
           <JobSearchForm />
@@ -11,9 +11,9 @@
           <img
             class="2-80 h-80"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
-          />
+          >
         </div>
-        <div class="col-start-12 col-span-1"></div>
+        <div class="col-start-12 col-span-1" />
       </div>
     </section>
 
@@ -23,7 +23,10 @@
           to="/jobs/results"
           class="flex flex-col mx-5 border rounded-lg w-72 bg-brand-gray-2 h-96"
         >
-          <img :src="img" class="object-contain" />
+          <img
+            :src="img"
+            class="object-contain"
+          >
 
           <div class="h-48 px-6 py-4 mt-3">
             <h3 class="text-lg font-medium">
@@ -36,8 +39,9 @@
           <router-link
             to="/jobs/results"
             class="px-6 pb-4 text-sm text-brand-blue-1"
-            >See jobs</router-link
           >
+            See jobs
+          </router-link>
         </router-link>
       </template>
     </spotlight>

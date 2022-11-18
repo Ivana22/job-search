@@ -4,11 +4,12 @@
       class="fond-bold tracking-tighter text-8xl mb-14"
       data-test="action-phrase"
     >
-      <span :class="actionClasses">{{ action }}</span
-      ><br />
+      <span :class="actionClasses">{{ action }}</span><br>
       for everyone
     </h1>
-    <h2 class="text-3xl font-light">Find your next job at Bobo Corp.</h2>
+    <h2 class="text-3xl font-light">
+      Find your next job at Bobo Corp.
+    </h2>
   </section>
 </template>
 

@@ -1,11 +1,14 @@
 <template>
   <ul>
-    <li v-for="spotlight in spotlights" :key="spotlight.id">
+    <li
+      v-for="spotlight in spotlights"
+      :key="spotlight.id"
+    >
       <slot
         :title="spotlight.title"
         :img="spotlight.img"
         :description="spotlight.description"
-      ></slot>
+      />
     </li>
   </ul>
 </template>

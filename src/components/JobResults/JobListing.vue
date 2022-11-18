@@ -4,7 +4,8 @@
       :to="jobPageLink"
       class="block mx-auto bg-white border border-solid border-brand-gray-2 rounded hover:shadow-gray"
       data-test="job-page-link"
-      ><div class="pt-5 pb-2 mx-8 border-b border-solid border-brand-gray-2">
+    >
+      <div class="pt-5 pb-2 mx-8 border-b border-solid border-brand-gray-2">
         <h2 class="mb-2 text-2xl">
           {{ job.title }}
         </h2>
@@ -27,7 +28,9 @@
       </div>
       <div class="px-8 py-4">
         <div>
-          <h3 class="mt-1 mb-2">Qualifications:</h3>
+          <h3 class="mt-1 mb-2">
+            Qualifications:
+          </h3>
           <div>
             <ul class="pl-8 list-disc">
               <li
@@ -40,9 +43,12 @@
           </div>
         </div>
         <div class="mt-2 text-center">
-          <router-link :to="jobPageLink" class="text-brand-blue-1"
-            >Expand</router-link
+          <router-link
+            :to="jobPageLink"
+            class="text-brand-blue-1"
           >
+            Expand
+          </router-link>
         </div>
       </div>
     </router-link>

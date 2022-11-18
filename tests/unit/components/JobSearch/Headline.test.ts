@@ -5,7 +5,7 @@ import Headline from "@/components/JobSearch/Headline.vue";
 
 describe("Headline", () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    jest.useFakeTimers("legacy");
   });
 
   afterEach(() => {

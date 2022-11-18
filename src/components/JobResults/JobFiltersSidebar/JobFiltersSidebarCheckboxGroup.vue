@@ -3,9 +3,13 @@
     <div class="mt-5">
       <fieldset>
         <ul class="flex flex-row flex-wrap">
-          <li v-for="value in uniqueValues" :key="value" class="w-1/2 h-8">
+          <li
+            v-for="value in uniqueValues"
+            :key="value + 'random key'"
+            class="w-1/2 h-8"
+          >
             <input
-              :id="value"
+              :id="value + 'random key'"
               v-model="selectedValues"
               :value="value"
               type="checkbox"
@@ -13,21 +17,25 @@
               :data-test="value"
               @change="selectValue"
             />
-            <label :for="value" data-test="value">{{ value }}</label>
+            <label :for="value + 'random key'" data-test="value">{{
+              value
+            }}</label>
           </li>
         </ul>
       </fieldset>
     </div>
   </accordion>
 </template>
-<script>
-import { ref } from "vue";
+<script lang="ts">
+import { ref, defineComponent } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 
-import Accordion from "@/components/Shared/Accordion.vue";
+import { key } from "../../../store/index";
 
-export default {
+import Accordion from "../../../components/Shared/Accordion.vue";
+
+export default defineComponent({
   name: "JobFiltersSidebarCheckboxGroup",
   components: { Accordion },
   props: {
@@ -45,10 +53,10 @@ export default {
     },
   },
   setup(props) {
-    const store = useStore();
+    const store = useStore(key);
     const router = useRouter();
 
-    const selectedValues = ref([]);
+    const selectedValues = ref<string[]>([]);
 
     const selectValue = () => {
       store.commit(props.mutation, selectedValues.value);
@@ -57,5 +65,5 @@ export default {
 
     return { selectedValues, selectValue };
   },
-};
+});
 </script>

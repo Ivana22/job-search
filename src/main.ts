@@ -1,23 +1,24 @@
+// @ts-nocheck
 import { createApp } from "vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faSearch,
   faAngleDown,
   faAngleUp,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
-import App from "./App.vue";
+import App from "@/App.vue";
 import "@/assets/tailwind.css";
 import router from "@/router";
-import store from "./store";
+import store, { key } from "@/store";
 
-library.add(faSearch);
 library.add(faAngleDown);
 library.add(faAngleUp);
+library.add(faSearch);
 
 createApp(App)
-  .use(store)
+  .use(store, key)
   .use(router)
   .component("font-awesome-icon", FontAwesomeIcon)
   .mount("#app");

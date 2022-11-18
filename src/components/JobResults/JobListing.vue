@@ -10,7 +10,7 @@
         </h2>
         <div class="flex flex-row align-middle">
           <div class="mr-5">
-            <span>{{ job.organzation }}</span>
+            <span>{{ job.organization }}</span>
           </div>
           <div>
             <ul>
@@ -48,13 +48,14 @@
     </router-link>
   </li>
 </template>
-<script>
-import { computed } from "vue";
-export default {
+<script lang="ts">
+import { computed, defineComponent, PropType } from "vue";
+import { Job } from "../../api/types";
+export default defineComponent({
   name: "JobListing",
   props: {
     job: {
-      type: Object,
+      type: Object as PropType<Job>,
       required: true,
     },
   },
@@ -67,5 +68,5 @@ export default {
   //     return `/jobs/results/${this.job.id}`;
   //   },
   // },
-};
+});
 </script>

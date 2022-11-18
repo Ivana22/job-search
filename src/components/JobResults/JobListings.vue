@@ -42,10 +42,10 @@
 <script lang="ts">
 import { computed, onMounted, defineComponent } from "vue";
 
-import useCurrentPage from "../../composables/useCurrentPage";
-import usePreviousAndNextPages from "../../composables/usePreviousAndNextPages";
-import { useFilteredJobs, useFetchJobsDispatch } from "../../store/composables";
-import JobListing from "../../components/JobResults/JobListing.vue";
+import useCurrentPage from "@/composables/useCurrentPage";
+import usePreviousAndNextPages from "@/composables/usePreviousAndNextPages";
+import { useFilteredJobs, useFetchJobsDispatch } from "@/store/composables";
+import JobListing from "@/components/JobResults/JobListing.vue";
 
 export default defineComponent({
   name: "JobListings",

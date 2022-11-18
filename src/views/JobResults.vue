@@ -4,11 +4,12 @@
     <JobListings />
   </div>
 </template>
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import JobFiltersSidebar from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebar.vue";
-import JobListings from "@/components/JobResults/JobListings";
-export default {
+import JobListings from "@/components/JobResults/JobListings.vue";
+export default defineComponent({
   name: "JobResultsView",
   components: { JobFiltersSidebar, JobListings },
-};
+});
 </script>

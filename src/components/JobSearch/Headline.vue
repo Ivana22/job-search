@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import nextElementInList from "../../utils/nextElementsInList";
+import nextElementInList from "@/utils/nextElementsInList";
 
 interface ActionClasses {
   [x: string]: boolean;

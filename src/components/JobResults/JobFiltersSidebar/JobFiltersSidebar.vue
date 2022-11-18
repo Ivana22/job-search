@@ -36,9 +36,9 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import ActionButton from "../../Shared/ActionButton.vue";
-import Accordion from "../../Shared/Accordion.vue";
-import JobFiltersSidebarCheckboxGroup from "./JobFiltersSidebarCheckboxGroup.vue";
+import ActionButton from "@/components/Shared/ActionButton.vue";
+import Accordion from "@/components/Shared/Accordion.vue";
+import JobFiltersSidebarCheckboxGroup from "@/components/JobResults/JobFiltersSidebar/JobFiltersSidebarCheckboxGroup.vue";
 
 import {
   useUniqueOrganizations,

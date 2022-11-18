@@ -56,7 +56,7 @@
 </template>
 <script lang="ts">
 import { computed, defineComponent, PropType } from "vue";
-import { Job } from "../../api/types";
+import { Job } from "@/api/types";
 export default defineComponent({
   name: "JobListing",
   props: {

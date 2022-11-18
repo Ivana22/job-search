@@ -34,9 +34,9 @@ import { ref, defineComponent } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 
-import { key } from "../../../store/index";
+import { key } from "@/store/index";
 
-import Accordion from "../../../components/Shared/Accordion.vue";
+import Accordion from "@/components/Shared/Accordion.vue";
 
 export default defineComponent({
   name: "JobFiltersSidebarCheckboxGroup",
